@@ -1,30 +1,55 @@
-# GenPact
-Sample assignment.
-
-![alt text](https://github.com/ketanshinde/GenPact/blob/master/GenPact/Assets.xcassets/IMG_0360.imageset/IMG_0360.png)
-
-
-All below points are covered in sample:
-1. User should be able to view list of items which will be fetched from cloud/server. 
-2. User should be able to view details by selecting an item from list. 
-3. The Item details includes an image, name and other details of that item. 
-4. User should be able to mark as a favourite from the detail screen. You can use any local storage techniques for storing the data in device. (Using Core Data)
-5. User should be able to access from the section called “Favourite” which will show list of the favourite item.
-6. User should be able to navigate to item details from Favourite as well. 
-7. User should be able to delete any item from the “Favourite” list.
- 
-Brief Explanation:
-I get the api support from "themoviedb" followed by creating API_KEYS and loading the popular movies in tableView.
-I installed libraries through carthage,(pods are already know)
-I opted forthe mvvm architecture and pritty much modular code with followed guidline so later on easy to test.
-Core data is used for coordianting with persistence storage.
-Some where i have took the help of singleton pattern, used genrics (Type), business logic in separate file etc etc.
-
-NOTE: 
-Some time the api "themoviedb" donot make secure connection with server. That machine may have SSL certifcate issue.
-I encountered same issue while i was running the code in different mac machine. I hit the api in browser but unable to store the secure connection, hence SLL Handshake failed.
-But everything is running fine in devices when created ipa.
-
-I also uploaded screen shot from device how app looks like.
-Thanks! :)
-
+GO-JEK iOS Problem Statement
+Acceptance Criteria
+Your selection chances are higher if
+● You use the latest version of Swift
+● You adhere to Apple’s Human Interface Guidelines and coding conventions
+● Your app performs well in terms of CPU, memory and energy usage
+● Your code is loosely coupled, testable and uses an architecture similar to VIPER,
+MVVM, MVP, etc.
+● You tastefully customise the UI and add animations etc.
+● Your app does not have too many dependencies on third party frameworks
+We may reject your application if
+● Your project fails to compile or compiles with warnings with the current version of Xcode
+● Your app does not layout correctly for all iOS devices that can run the current release of
+iOS
+● Your app has UI/logical flaws that make it difficult to use
+● You do not have UI and unit tests in your application with decent code coverage
+● Your UI/unit tests fail
+Your Assignment – A Contacts App
+As an assignment, you will be creating an app similar to the iOS Contacts app but with a much
+smaller feature set. The screens and features are described in the following sections.
+Home Screen
+This screen lists all available contacts in the app along with their photo. The contacts
+are fetched from the backend. Along with the list of contacts, it shows which contacts
+are marked favourite.
+Contact Detail Screen
+Tapping on a contact in the home screen leads you to the Contact Detail screen. This
+screen shows the details of the contact such as their phone number, name, image,
+email address etc. You can call, message and email a contact from this screen as well
+as mark/unmark them as a favourite.
+Edit Contact Screen
+Tapping on the contact button in the Contact Detail screen leads you to this screen. You
+can edit all fields of the contact in this screen including the contact’s photo. Saving the
+contact’s information should also save it on the backend.
+Add Contact Screen
+This screen looks similar to the Edit Contact screen. Tapping on the Add button in the
+Home screen leads you to the Add Contact screen. Here you can add a new contact to
+the database along with its phone number, email address, photo, etc. All fields of the
+new contact are mandatory in this screen.
+Backend API
+The backend is a RESTful application developed in Rails:
+● API base URL : http://gojek-contacts-app.herokuapp.com
+● Documentation : http://gojek-contacts-app.herokuapp.com/apipie/1.0/contacts
+● Source code : https://github.com/anagri/contacts-server
+● Postman Collection:
+https://docs.google.com/document/d/1SroU6qiqkTTaON_5N3tl0p29ubrqcODB_LnqoYfM
+qRM/edit?usp=sharing
+Other Notes
+● We expect you to use git and commit frequently
+● You should submit your solution to us as a zip archive
+● The zip archive should also include your git commit history
+● Please use system fonts everywhere. It’s not important to match the font size
+with the design, but you can infer the sizes from the designs
+Please feel free to reach out to us in case of any queries related to the backend or the
+design. Wish you all the best!
+Design Guidelines
